@@ -5,7 +5,6 @@ using HarmonyLib;
 // using static Obeliskial_Essentials.Essentials;
 using System;
 using static SpeedUp.Plugin;
-using static SpeedUp.CustomFunctions;
 using static SpeedUp.SpeedUpFunctions;
 using System.Collections.Generic;
 using static Functions;

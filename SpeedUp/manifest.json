@@ -2,6 +2,6 @@
   "name": "Speed_Up",
   "version_number": "1.0.0",
   "website_url": "https://github.com/binbinmods/SpeedUp",
-  "description": "A mod that DescriptionToReplace",
+  "description": "A mod that allows you to speed up the game. Increases CPU usage. Includes config option to enable Ultrafast mode.",
   "dependencies": ["BepInEx-BepInExPack_AcrossTheObelisk-5.4.23"]
 }

@@ -1,6 +1,6 @@
 # Speed Up
 
-This is a simple mod that DescriptionToReplace
+Enables you to change how fast the game plays at. Also enables Ultrafast mode.
 
 To change the configs, just open up the config menu by pressing F5 and then changing the appropriate values. Restarting the game is only necessary when enabling/disabling the mod.
 
@@ -12,6 +12,8 @@ This has not been tested in multiplayer yet, so let me know if there are any iss
 | :-------------- | :-----: | :------------------------------------------------------------------------------------------ |
 | EnableMod       |  true   | Enables the mod. Restart the game after changing this.                                      |
 | EnableDebugging |  true   | Enables debugging for if errors occur. Please enable this before submitting a LogOutput.log |
+| EnableUltrafast |  false  | Enables ultrafast mode                                                                      |
+| SpeedModifier   |  1.0f   | Sets the speed modifier for the game                                                        |
 
 ## Installation (manual)
 

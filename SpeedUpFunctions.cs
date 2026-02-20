@@ -18,6 +18,7 @@ namespace SpeedUp
 
         public static void HandleSpeedChange()
         {
+            LogDebug($"Setting time scale to {SpeedModifier.Value}");
             Time.timeScale = SpeedModifier.Value;
         }
 
@@ -25,6 +26,7 @@ namespace SpeedUp
         {
             if (EnableUltrafast.Value)
             {
+                LogDebug("Ultrafast mode enabled, setting game speed to Ultrafast");
                 GameManager.Instance.configGameSpeed = Enums.ConfigSpeed.Ultrafast;
                 return;
             }
