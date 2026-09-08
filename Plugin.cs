@@ -10,6 +10,7 @@ using BepInEx.Bootstrap;
 using System;
 using System.Collections.Generic;
 using static SpeedUp.SpeedUpFunctions;
+using System.Runtime.CompilerServices;
 // using static SpeedUp.EssentialsCompatibility;
 
 
@@ -95,21 +96,20 @@ namespace SpeedUp
 
 
         // These are some functions to make debugging a tiny bit easier.
-        internal static void LogDebug(string msg)
+        internal static void LogDebug(string msg, [CallerMemberName] string caller = "")
         {
             if (EnableDebugging.Value)
             {
-                Log.LogDebug(debugBase + msg);
+                Log.LogDebug($"{debugBase}- {caller} - {msg}");
             }
-
         }
         internal static void LogInfo(string msg)
         {
             Log.LogInfo(debugBase + msg);
         }
-        internal static void LogError(string msg)
+        internal static void LogError(string msg, [CallerMemberName] string caller = "")
         {
-            Log.LogError(debugBase + msg);
+            Log.LogError($"{debugBase}- {caller} - {msg}");
         }
 
 

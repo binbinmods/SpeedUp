@@ -31,8 +31,8 @@ namespace SpeedUp
                 return;
             }
 
-            bool flag = SaveManager.PrefsHasKey("fastMode") ? SaveManager.LoadPrefsBool("fastMode") : (SettingsManager.Instance?.fastModeToggle.isOn ?? false);
-            SettingsManager.Instance?.fastModeToggle?.isOn = flag;
+            bool flag = SaveManager.Instance.PrefsHasKey("fastMode") ? SaveManager.Instance.LoadPrefsBool("fastMode") : (SettingsManager.Instance?.fastModeToggle.isOn ?? false);
+            SettingsManager.Instance.fastModeToggle.isOn = flag;
             if (flag)
             {
                 GameManager.Instance.configGameSpeed = Enums.ConfigSpeed.Fast;

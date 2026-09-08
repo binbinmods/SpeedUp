@@ -4,8 +4,8 @@ schemaVersion = "1.0.0"
 [package]
 namespace = "Binbin"
 name = "Speed_Up"
-versionNumber = "1.0.0"
-description = "A mod that DescriptionToReplace"
+versionNumber = "1.1.0"
+description = "A mod that allows you to speed up the game. Increases CPU usage. Includes config option to enable Ultrafast mode."
 websiteUrl = "https://github.com/binbinmods/SpeedUp"
 containsNsfwContent = false
 
